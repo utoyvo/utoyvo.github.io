@@ -1,0 +1,633 @@
+/**
+ * Style
+ */
+
+/* ----------------------------------------------------------------
+# Fonts
+# Normalize
+# Components
+	## Wrapper
+	## Musthead
+	## Entry
+	## Sidebar
+	## Footer
+	## Button
+	## Screen reader text
+	## Preloader
+---------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+# Fonts
+---------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+/* ----------------------------------------------------------------
+# Normalize
+---------------------------------------------------------------- */
+::-webkit-scrollbar {
+	width: 20px
+}
+
+::-webkit-scrollbar-track {
+	background-color: #888
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #000;
+	border: 4px solid #888
+}
+
+::-moz-selection {
+	background-color: #088;
+	color: #ff0
+}
+
+::selection {
+	background-color: #088;
+	color: #ff0
+}
+
+:active,
+:hover,
+:focus {
+	outline: 0;
+	outline-offset: 0
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+
+html {
+	line-height: 1.1;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	background-color: #888;
+	font-size: 1.5em;
+	font-family: 'Press Start 2P', cursive;
+}
+
+header:before,
+header:after,
+main:before,
+main:after,
+footer:before,
+footer:after {
+	content: " ";
+	display: table;
+}
+
+a {
+	background-color: transparent;
+	color: #0ff;
+	text-decoration: none;
+	text-transform: uppercase
+}
+
+a:hover {
+	color: #088
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: uppercase
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible
+}
+
+pre {
+	font-size: 1em
+}
+
+abbr[title] {
+	background-color: #00f;
+	border-bottom: none;
+	text-decoration: none;
+	text-decoration: none;
+	cursor: help;
+}
+
+b,
+strong {
+	font-weight: bolder
+}
+
+code,
+kbd,
+samp {
+	font-size: 1em
+}
+
+small {
+	font-size: .8em
+}
+
+sub,
+sup {
+	font-size: .7em;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+
+sub {
+	bottom: -0.25em
+}
+
+sup {
+	top: -0.5em
+}
+
+img {
+	border-style: none
+}
+
+label {
+	text-transform: uppercase;
+	cursor: pointer
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	margin: 0;
+	font-size: 1em;
+	font-family: 'Press Start 2P', cursive;
+	border: 0
+}
+
+button,
+input {
+	overflow: visible
+}
+
+button,
+select {
+	text-transform: none
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText
+}
+
+fieldset {
+	padding: .5em
+}
+
+legend {
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal
+}
+
+progress {
+	vertical-align: baseline
+}
+
+textarea {
+	overflow: auto
+}
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	padding: 0
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto
+}
+
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px
+}
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit
+}
+
+details {
+	display: block
+}
+
+summary {
+	display: list-item
+}
+
+template,
+[hidden] {
+	display: none
+}
+
+ul {}
+
+li {
+	list-style-type: none
+}
+
+/* ----------------------------------------------------------------
+# Components
+---------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+## Wrapper
+---------------------------------------------------------------- */
+.wrapper {
+	width: 32em;
+	height: auto;
+	margin: 1em auto;
+	background-color: #000;
+	color: #fff;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 9
+}
+
+/* ----------------------------------------------------------------
+## Musthead
+---------------------------------------------------------------- */
+.masthead {
+	color: #888
+}
+
+.masthead:before,
+.masthead:after {
+	content: "================================"
+}
+
+.masthead h1,
+.masthead div {
+	margin: 0 1em;
+	color: #888
+}
+
+@media (max-width: 768px) {
+	.masthead {
+		margin: 1em 0
+	}
+
+	.masthead:before,
+	.masthead:after {
+		content: ""
+	}
+
+	.masthead h1,
+	.masthead div {
+		text-align: center
+	}
+}
+
+/* ----------------------------------------------------------------
+## Entry
+---------------------------------------------------------------- */
+.entry {
+	padding: 0;
+	margin: 1em 1em 0;
+	background-color: #008;
+	color: #fff;
+	overflow: hidden
+}
+
+.entry:before,
+.entry:after {
+	content: "------------------------------"
+}
+
+/* entry-header */
+.entry-header {
+	margin: 0 1em
+}
+
+.entry-header .entry-title,
+.entry-header .entry-title a {
+	color: #0f0
+}
+
+/* entry-content */
+.entry-content {
+	padding: 0 1em
+}
+
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	margin-top: 1em;
+	color: #0f0
+}
+
+.entry-content figure {
+	width: 28em;
+	margin: 1em 0 0;
+	padding: 1em;
+	background-color: #0f0;
+	z-index: 99
+}
+
+.entry-content figure img {
+	height: auto;
+	width: 100%
+}
+
+.entry-content figcaption {
+	display: none
+}
+
+.entry-content p {
+	margin: 1em 0 0;
+}
+
+.entry-content li:before {
+	content: ">"
+}
+
+/* entry-footer */
+.entry-footer:before {
+	content: "------------------------------"
+}
+
+.entry-footer a {
+	margin: 0 1em;
+	color: #fff;
+	text-transform: uppercase
+}
+
+.entry-footer a:hover {
+	color: #888;
+}
+
+.entry-footer a:before {
+	content: "["
+}
+
+.entry-footer a:after  {
+	content: "]"
+}
+
+@media (max-width: 768px) {
+	.entry {
+		padding: 1em 0;
+		margin: 1em 0;
+	}
+
+	.entry:before,
+	.entry:after,
+	.entry-footer:before {
+		content: ""
+	}
+
+	.entry-content figure {
+		width: 100%;
+		padding: .5em;
+	}
+}
+
+/* ----------------------------------------------------------------
+## Sidebar
+---------------------------------------------------------------- */
+.sidebar {
+	margin: 1em 0 0;
+	background-color: #008
+}
+
+.sidebar ul.marquee {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: .2em 0;
+	text-transform: uppercase;
+	overflow: hidden
+}
+
+.sidebar ul.marquee li {
+	display: inline;
+	color: #ff0;
+}
+
+.sidebar ul.marquee li:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {}
+
+/* ----------------------------------------------------------------
+## Footer
+---------------------------------------------------------------- */
+.footer {
+	color: #888
+}
+
+.footer:before,
+.footer:after {
+	content: "================================"
+}
+
+.footer .info {
+	margin: 0 1em;
+	text-transform: uppercase
+}
+
+.footer .info span:first-child {
+	float: left
+}
+
+.footer .info span:last-child  {
+	float: right
+}
+
+.footer .info a {
+	color: #888
+}
+
+.footer .info a:hover,
+.footer .info a:focus {
+	color: #fff
+}
+
+.footer .info a:before {
+	content: "["
+}
+
+.footer .info a:after  {
+	content: "]"
+}
+
+@media (max-width: 768px) {
+	.footer {
+		margin: 1em 0
+	}
+
+	.footer span {
+		display: block;
+		float: none !important
+	}
+
+	.footer .info span:last-child  {
+		margin: 1em 0 0;
+		float: none
+	}
+
+	.footer:before,
+	.footer:after {
+		content: ""
+	}
+}
+
+/* ----------------------------------------------------------------
+## Button
+---------------------------------------------------------------- */
+.btn,
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	display: table;
+	margin: 1em auto;
+	padding: 1em;
+	background-color: #0f0;
+	color: #fff;
+	text-transform: uppercase;
+	box-shadow: .5em .5em #000
+}
+
+.btn:hover,
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background-color: #080;
+	color: #ff0;
+	cursor: pointer;
+	box-shadow: .25em .25em #000
+}
+
+@media (max-width: 768px) {}
+
+
+/* ----------------------------------------------------------------
+## Screen reader text
+---------------------------------------------------------------- */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000
+}
+
+/* ----------------------------------------------------------------
+## Preloader
+---------------------------------------------------------------- */
+.preloader {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #f0f;
+	background-image: linear-gradient( transparent 50%, #0ff 50% );
+	background-size: 1em 1em;
+	text-align: center;
+	overflow: visible;
+	z-index: 9;
+	-webkit-animation: load 1s infinite linear;
+	animation: load 1s infinite linear
+}
+
+.preloader div {
+	width: auto;
+	height: auto;
+	position: relative;
+	top: 48%;
+	display: inline-block;
+	margin: 0;
+	padding: 1em;
+	background-color: #000;
+	color: #fff;
+	font-family: 'Press Start 2P', cursive;
+	z-index: 99
+}
+
+@-webkit-keyframes load {
+	0%   { background-position-y: 0 }
+	100% { background-position-y: 4em }
+}
+
+@keyframes load {
+	0%   { background-position-y: 0 }
+	100% { background-position-y: 4em }
+}
