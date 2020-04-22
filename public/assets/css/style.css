@@ -14,6 +14,7 @@
 	## Button
 	## Screen reader text
 	## Preloader
+# Utilities
 ---------------------------------------------------------------- */
 
 /* ----------------------------------------------------------------
@@ -636,4 +637,17 @@ input[type="submit"]:hover {
 @keyframes load {
 	0%   { background-position-y: 0 }
 	100% { background-position-y: 4em }
+}
+
+/* ----------------------------------------------------------------
+# Utilities
+---------------------------------------------------------------- */
+.lg-only {
+	display: block;
+}
+
+@media (max-width: 768px) {
+	.lg-only {
+		display: none;
+	}
 }
