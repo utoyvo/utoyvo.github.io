@@ -1,0 +1,11 @@
+[
+	{
+		"id"      :"1",
+		"template":"home",
+		"title"   :"Home",
+		"slug"    :"home",
+		"cover"   :"public/uploads/marginal-act.jpg",
+		"excerpt" :"<p>Welcome to the UTOYVO space! I develop web sites and maybe you will like what you will see.</p>",
+		"content" :"<p>I'm a web developer who aims to combine the beauty of design with the logical perfection of coding. I'm passionate about designing and developing beautiful and converting pages. One of my strengths is that I love and am great at both the design as well as the coding.</p><p>It is interesting for me to cooperate with creative people who are not afraid to experiment, are ready to seek new and non-ordinary solutions for joint projects.</p>"
+	}
+]

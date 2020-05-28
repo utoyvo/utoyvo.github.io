@@ -1,0 +1,10 @@
+[
+	{
+		"id"      :"1",
+		"template":"about",
+		"title"   :"About",
+		"slug"    :"about",
+		"photo"   :"public/uploads/oleksandr-klochko.jpg",
+		"content" :"<p>My name is Oleksandr Klochko or just Sasha but also you can call me UTOYVO.</p><p>I'm a white heterosexual man, born and living in the European part of the world. I'm not an average person but also not an outstanding one.</p><p>I survived birth and lived to puberty.</p><section id='socila-nets'><h3>Social Nets</h3><ul><li><a href='https://www.couchsurfing.com/people/utoyvo' target='_blank'>Couchsurfing</a></li><li><a href='https://www.facebook.com/utoyvo' target='_blank'>Facebook</a></li><li><a href='https://github.com/utoyvo' target='_blank'>Github</a></li><li><a href='https://www.instagram.com/utoyvo' target='_blank'>Instagram</a></li><li><a href='https://www.linkedin.com/in/oleksandr-klochko' target='_blank'>Linkedin</a></li></ul></section>"
+	}
+]

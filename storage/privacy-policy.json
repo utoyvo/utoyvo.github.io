@@ -1,0 +1,9 @@
+[
+	{
+		"id"      :"1",
+		"template":"default",
+		"title"   :"Privacy policy",
+		"slug"    :"privacy-policy",
+		"content" :"<p>I use the <a href='https://marketingplatform.google.com/about/analytics/' target='_blank'>Google Analytics</a> service to analyze and develop the project.</p><p>Google Analytics services function witht the use of cookies. These tiny text files that are saved within browser will record data about user activity which is then sent to Google and, in turn, used to create those incredibly useful analytical reports.</p><p>Learn more about <a href='https://policies.google.com/privacy' target='_blank'>Google Privacy policy</a>.</p><section><h3>Protect your privacy</h3><p>If you think your data is not secure enough or you don’t want to share it, follow some basic guidelines. Remember, your safety is your priority.</p><br><ul><li><a href='https://www.mozilla.org/' target='_blank'>Mozilla Firefox</a> is an open-source web browser.</li><br><li><a href='https://duckduckgo.com/' target='_blank'>DuckDuckGo</a>  is an search engine that emphasizes protecting searchers privacy.</li><br><li><a href='https://protonmail.com/' target='_blank'>ProtonMail</a> is an end-to-end encrypted email service.</li><br><li><a href='https://adblockplus.org/' target='_blank'>Adblock Plus</a> is an open-source content-filtering and ad blocking extension.</li></ul></section>"
+	}
+]
