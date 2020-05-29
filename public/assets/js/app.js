@@ -1,91 +1,94 @@
 jQuery(document).ready(function(){
 	$('#preloader').fadeOut();
 
-	smile();
-
-	$("#navigation a").click(function() {
-		$("#navigation a").removeClass("active");
-		$(this).addClass("active");
+	$('#navigation a').click(function() {
+		$('#navigation a').removeClass('active');
+		$(this).addClass('active');
 	});
 
-	get_data(1);
-
-	$(".marquee").marquee({
+	$('.marquee').marquee({
 		duration:         8000,
 		gap:              24,
 		delayBeforeStart: 0,
-		direction:        "left",
+		direction:        'left',
 		pauseOnHover:     true,
 		duplicated:       true
 	});
-}); // jQuery
 
-function smile(i = 0) {
-	var smiles = [';)', ':)', ':)', ':)'],
-		smile  = document.getElementById('smile');
+	function smile(i = 0) {
+		var smiles = [';)', ':)', ':)', ':)'],
+			smile  = document.getElementById('smile');
 
-	smile.innerHTML = smiles[i];
-	i++;
-	if (i == smiles.length) i = 0;
-	setTimeout('smile(' + i + ')', 1000);
-}
-
-window.addEventListener("hashchange", get_data, false);
-
-function get_data(fadein) {
-	if (fadein == 1) {
-		$('#main').hide();
+		smile.innerHTML = smiles[i];
+		i++;
+		if (i == smiles.length) i = 0;
+		setTimeout('smile(' + i + ')', 1000);
 	}
 
-	var page = get_page();
+	smile();
 
-	window.page = page;
+	window.addEventListener('hashchange', get_data, false);
 
-	$.getJSON("storage/" + page + ".json", function(data) {
-		json = data;
+	function get_data(fadein) {
+		if (fadein == 1) {
+			$('#main').hide();
+		}
 
-		var items = [];
+		var page = get_page();
 
-		$.each(data, (function(index) {
-			var item = data[index];
+		window.page = page;
 
-			if (data[index]["template"] !== undefined) {
-				var template_id = data[index]["template"];
+		$.getJSON('storage/' + page + '.json', function(data) {
+			json = data;
+
+			var items = [];
+
+			$.each(data, (function(index) {
+				var item = data[index];
+
+				if (data[index]['template'] !== undefined) {
+					var template_id = data[index]['template'];
+				} else {
+					var template_id = 'default';
+				}
+
+				items.push('<section id="' + data[index]['slug'] + '" data-template="' + template_id + '" class="entry b-blue">');
+
+				window.scrollTo({top: 0, behavior: 'smooth'});
+
+				var source   = document.getElementById(template_id).innerHTML,
+					template = Handlebars.compile(source),
+					html     = template(item);
+
+				items.push(html);
+
+				items.push('</section>');
+			}));
+
+			var posts = $('<div/>', {'class': 'site-content', html: items.join('')});
+
+			if (fadein == 1) {
+				$('#main').html(posts).fadeIn();
 			} else {
-				var template_id = "default";
+				$('#main').html(posts);
 			}
 
-			items.push('<section id="' + data[index]['slug'] + '" data-template="' + template_id + '" class="entry b-blue">');
-
-			var source   = document.getElementById(template_id).innerHTML,
-				template = Handlebars.compile(source),
-				html     = template(item);
-
-			items.push(html);
-
-			items.push("</section>");
-		}));
-
-		var posts = $("<div/>", {"class": "site-content", html: items.join("")});
-
-		if (fadein == 1) {
-			$("#main").html(posts).fadeIn();
-		} else {
-			$("#main").html(posts);
-		}
-
-		if (typeof init === "function") {
-			init();
-		}
-	});
-}
-
-function get_page() {
-	var page = window.location.hash.substr(1).replace('/', '');
-
-	if (page == "") {
-		page = "home";
+			if (typeof init === 'function') {
+				init();
+			}
+		});
 	}
 
-	return page;
-}
+	get_data(1);
+
+	function get_page() {
+		var page = window.location.hash.substr(1).replace('/', '');
+
+		if (page == '') {
+			page = 'home';
+		}
+
+		return page;
+	}
+
+}); // jQuery
