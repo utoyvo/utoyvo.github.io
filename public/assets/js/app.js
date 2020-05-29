@@ -18,7 +18,6 @@ jQuery(document).ready(function(){
 		pauseOnHover:     true,
 		duplicated:       true
 	});
-
 }); // jQuery
 
 function smile(i = 0) {
@@ -56,7 +55,7 @@ function get_data(fadein) {
 				var template_id = "default";
 			}
 
-			items.push('<section id="' + data[index]['slug'] + '" data-template="' + template_id + '" class="entry">');
+			items.push('<section id="' + data[index]['slug'] + '" data-template="' + template_id + '" class="entry b-blue">');
 
 			var source   = document.getElementById(template_id).innerHTML,
 				template = Handlebars.compile(source),

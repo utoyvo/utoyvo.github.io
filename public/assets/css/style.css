@@ -22,21 +22,21 @@
 }
 
 ::-webkit-scrollbar-track {
-	background-color: #888;
+	background: #888;
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: #000;
+	background: #000;
 	border: 4px solid #888
 }
 
 ::-moz-selection {
-	background-color: #088;
+	background: #088;
 	color: #ff0;
 }
 
 ::selection {
-	background-color: #088;
+	background: #088;
 	color: #ff0;
 }
 
@@ -59,7 +59,7 @@ html {
 }
 
 body {
-	background-color: #888;
+	background: #888;
 	font-size: 1.5em;
 	font-family: "Press Start 2P", cursive;
 }
@@ -75,7 +75,7 @@ footer:after {
 }
 
 a {
-	background-color: transparent;
+	background: transparent;
 	color: #0ff;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -109,7 +109,7 @@ pre {
 }
 
 abbr[title] {
-	background-color: #00f;
+	background: #00f;
 	border-bottom: none;
 	text-decoration: none;
 	text-decoration: none;
@@ -269,13 +269,110 @@ li {
  */
 
 /**
+ * Colors
+ */
+.c-white {
+	color: #fff;
+}
+.b-white {
+	background: #fff;
+}
+
+.c-black {
+	color: #000;
+}
+.b-black {
+	background: #000;
+}
+
+.c-gray {
+	color: #888;
+}
+.b-gray {
+	background: #888;
+}
+
+.c-red {
+	color: #f00;
+}
+.b-red {
+	background: #f00;
+}
+
+.c- {
+	color: #800;
+}
+.b- {
+	background: #800;
+}
+
+.c-yellow {
+	color: #ff0;
+}
+.b-yellow {
+	background: #ff0;
+}
+
+.c- {
+	color: #ff0;
+}
+.b- {
+	background: #ff0;
+}
+
+.c-lime {
+	color: #0f0;
+}
+.b-lime {
+	background: #0f0;
+}
+
+.c-green {
+	color: #080;
+}
+.b-green {
+	background: #080;
+}
+
+.c-
+.b-
+
+.c-
+.b-
+
+.c-
+.b-
+
+.c-
+.b-
+
+.c-
+.b-
+
+.c-
+.b-
+
+.c-
+.b-
+
+.c-
+.b-
+
+.c-blue {
+	color: #008;
+}
+.b-blue {
+	background: #008;
+}
+
+/**
  * Page
  */
 #page {
 	width: 32em;
 	height: auto;
 	margin: 1em auto;
-	background-color: #000;
+	background: #000;
 	color: #fff;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -285,16 +382,13 @@ li {
 @media (max-width: 768px) {
 	#page {
 		width: 100%;
+		margin: 0;
 	}
 }
 
 /**
  * Musthead
  */
-#masthead {
-	color: #888;
-}
-
 #masthead .site-branding:before,
 #masthead .site-branding:after {
 	content: "================================";
@@ -302,7 +396,6 @@ li {
 
 #masthead .site-title {
 	margin: 0 1em;
-	color: #888;
 }
 
 @media (max-width: 768px) {
@@ -312,7 +405,7 @@ li {
 
 	#masthead .site-branding:before,
 	#masthead .site-branding:after {
-		content: "";
+		overflow: hidden;
 	}
 
 	#masthead .site-title {
@@ -323,10 +416,6 @@ li {
 /**
  * Navigation
  */
-#navigation {
-	background-color: #008;
-}
-
 #navigation ul {
 	margin: 0 1em;
 	padding: 0;
@@ -350,14 +439,14 @@ li {
 
 #navigation ul li a:hover:not(.active),
 #navigation ul li a:focus:not(.active) {
-	background-color: #ff0;
+	background: #ff0;
 	color: #008;
 }
 
 #navigation ul li a.active,
 #navigation ul li a.active:hover,
 #navigation ul li a.active:focus {
-	background-color: #ff0;
+	background: #ff0;
 	color: #f00;
 }
 
@@ -392,7 +481,6 @@ li {
 .entry {
 	padding: 0;
 	margin: 1em 1em 0;
-	background-color: #008;
 	color: #fff;
 	overflow: hidden;
 }
@@ -430,7 +518,7 @@ li {
 	width: 28em;
 	margin: 1em 0 0;
 	padding: 1em;
-	background-color: #0f0;
+	background: #0f0;
 	z-index: 99;
 }
 
@@ -468,7 +556,7 @@ li {
 
 	.entry:before,
 	.entry:after {
-		content: "";
+		overflow: hidden;
 	}
 
 	.entry-content figure {
@@ -482,7 +570,6 @@ li {
  */
 #sidebar {
 	margin: 1em 0 0;
-	background-color: #008;
 }
 
 #sidebar ul.marquee {
@@ -508,10 +595,6 @@ li {
 /**
  * Colophon
  */
-#colophon {
-	color: #888;
-}
-
 #colophon:before,
 #colophon:after {
 	content: "================================";
@@ -564,7 +647,7 @@ li {
 
 	#colophon:before,
 	#colophon:after {
-		content: "";
+		overflow: hidden;
 	}
 }
 
@@ -580,7 +663,7 @@ input[type="submit"] {
 	display: table;
 	margin: 1em auto;
 	padding: 1em;
-	background-color: #0f0;
+	background: #0f0;
 	color: #fff;
 	text-transform: uppercase;
 	box-shadow: .5em .5em #000;
@@ -592,7 +675,7 @@ button:hover, button:focus,
 input[type="button"]:hover, input[type="button"]:focus,
 input[type="reset"]:hover, input[type="reset"]:focus,
 input[type="submit"]:hover, input[type="submit"]:focus {
-	background-color: #080;
+	background: #080;
 	color: #ff0;
 	cursor: pointer;
 	box-shadow: .25em .25em #000;
@@ -600,25 +683,9 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 
 @media (max-width: 768px) {}
 
-/**
- * Lightbox
- */
-.lightbox {}
+/* Monochrom */
 
-.lightbox.active {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: table;
-	margin: 0;
-	padding: 0;
-}
-
-.lightbox.active img {
-	display: table-cell;
-}
+.monochrom {}
 
 /**
  * Screen reader text
@@ -637,7 +704,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
+	background: #f1f1f1;
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
@@ -666,7 +733,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #f0f;
+	background: #f0f;
 	background-image: linear-gradient( transparent 50%, #0ff 50% );
 	background-size: 1em 1em;
 	text-align: center;
@@ -684,7 +751,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 	display: inline-block;
 	margin: 0;
 	padding: 1em;
-	background-color: #000;
+	background: #000;
 	color: #fff;
 	font-family: "Press Start 2P", cursive;
 	z-index: 99;
