@@ -9,7 +9,7 @@
 		"content" :"<p>Infinitely zooming pixel journey.</p>",
 		"button"  :{
 			"text":"View Site",
-			"link":"https://utoyvo.github.io/loop"
+			"url" :"https://utoyvo.github.io/loop"
 		}
 	},
 
@@ -22,7 +22,7 @@
 		"content" :"<p>Just another login flow plugin.</p>",
 		"button"  :{
 			"text":"View GitHub",
-			"link":"https://github.com/utoyvo/login-flow"
+			"url" :"https://github.com/utoyvo/login-flow"
 		}
 	},
 
@@ -35,7 +35,7 @@
 		"content" :"<p>Marginal act is an independent game studio based in Kharkiv. Games are different by gameplay and visualization but similar by strong experimental nature.</p>",
 		"button"  :{
 			"text":"View Site",
-			"link":"https://marginalact.indie.af"
+			"url" :"https://marginalact.indie.af"
 		}
 	},
 
@@ -48,7 +48,7 @@
 		"content" :"<p>WebVR Exhibition of <a href='https://t.me/Mishaskvortsov' target='_blank'>Misha Skvortsov</a> glitch graphic artist from Odessa.</p>",
 		"button"  :{
 			"text":"View Site",
-			"link":"https://utoyvo.github.io/misha-skvortsov"
+			"url" :"https://utoyvo.github.io/misha-skvortsov"
 		}
 	},
 
@@ -61,7 +61,7 @@
 		"content" :"<p>Cultural agency in Lviv, media about culture.</p>",
 		"button"  :{
 			"text":"View Site",
-			"link":"https://liniyavtechi.com"
+			"url" :"https://liniyavtechi.com"
 		}
 	},
 
@@ -74,7 +74,7 @@
 		"content" :"<p>A simple and intuitive <abbr title='Create Read Update Delete'>CRUD</abbr> system using the <abbr title='Model View Controller'>MVC</abbr> pattern in <abbr title='Object-oriented programming'>OOP</abbr> paradigm. To connect to the database using <abbr title='PHP Data Objects'>PDO</abbr>.</p>",
 		"button"  :{
 			"text":"View GitHub",
-			"link":"https://github.com/utoyvo/crud-mvc-oop-pdo"
+			"url" :"https://github.com/utoyvo/crud-mvc-oop-pdo"
 		}
 	},
 
@@ -87,7 +87,7 @@
 		"content" :"<p>The site dedicated to the collection and systematization of resources made in Text-based user interface style.</p>",
 		"button"  :{
 			"text":"View Site",
-			"link":"https://tttuui.gamejolt.io"
+			"url" :"https://tttuui.gamejolt.io"
 		}
 	},
 
@@ -100,7 +100,7 @@
 		"content" :"<p>OFFSUREPEACE music album presentation in WebVR for <a href='http://www.6a6y6.com/' target='_blank'>6a6y6</a> from UK.</p>",
 		"button"  :{
 			"text":"View Site",
-			"link":"http://www.6a6y6.com/offsurepeace/2.html"
+			"url" :"http://www.6a6y6.com/offsurepeace/2.html"
 		}
 	}
 ]
