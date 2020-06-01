@@ -15,18 +15,6 @@ jQuery(document).ready(function(){
 		duplicated:       true
 	});
 
-	function smile(i = 0) {
-		var smiles = [';)', ':)', ':)', ':)'],
-			smile  = document.getElementById('smile');
-
-		smile.innerHTML = smiles[i];
-		i++;
-		if (i == smiles.length) i = 0;
-		setTimeout('smile(' + i + ')', 1000);
-	}
-
-	smile();
-
 	window.addEventListener('hashchange', get_data, false);
 
 	function get_data(fadein) {
@@ -92,3 +80,15 @@ jQuery(document).ready(function(){
 	}
 
 }); // jQuery
+
+function smile(i = 0) {
+	var smiles = [';)', ':)', ':)', ':)'],
+		smile  = document.getElementById('smile');
+
+	smile.innerHTML = smiles[i];
+	i++;
+	if (i == smiles.length) i = 0;
+	setTimeout('smile(' + i + ')', 1000);
+}
+
+smile();

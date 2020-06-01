@@ -19,7 +19,7 @@
 		"title"   :"Login Flow",
 		"slug"    :"login-flow",
 		"cover"   :"public/uploads/login-flow.jpg",
-		"content" :"<p>Just another login flow plugin.</p>",
+		"content" :"<p>Just another WordPress login flow plugin.</p>",
 		"button"  :{
 			"text":"View GitHub",
 			"url" :"https://github.com/utoyvo/login-flow"

@@ -264,6 +264,29 @@ li {
 	list-style-type: none;
 }
 
+@media (max-width: 768px) {
+	a {
+		color: #0f0;
+	}
+
+	a:hover, a:focus, a.active {
+		color: #000;
+		background: #0f0;
+	}
+
+	abbr[title] {
+		background: #0f0;
+	}
+
+	img {
+		-webkit-filter: hue-rotate(180deg);
+		-moz-filter: hue-rotate(180deg);
+		-ms-filter: hue-rotate(180deg);
+		-o-filter: hue-rotate(180deg);
+		filter: hue-rotate(180deg);
+	}
+}
+
 /**
  * Components
  */
@@ -401,6 +424,7 @@ li {
 @media (max-width: 768px) {
 	#masthead {
 		margin: 1em 0;
+		color: #080;
 	}
 
 	#masthead .site-branding:before,
@@ -472,6 +496,24 @@ li {
 
 	#navigation ul li a {
 		padding: 1em;
+		color: #000;
+	}
+
+	#navigation {
+		background: #080;
+	}
+
+	#navigation ul li a:hover:not(.active),
+	#navigation ul li a:focus:not(.active) {
+		background: transparent;
+		color: #0f0;
+	}
+
+	#navigation ul li a.active,
+	#navigation ul li a.active:hover,
+	#navigation ul li a.active:focus {
+		background: #000;
+		color: #080;
 	}
 }
 
@@ -552,11 +594,26 @@ li {
 	.entry {
 		padding: 1em 0;
 		margin: 1em 0;
+		background: #080 !important;
+		color: #000 !important;
 	}
 
 	.entry:before,
 	.entry:after {
 		overflow: hidden;
+	}
+
+	.entry-header .entry-title,
+	.entry-header .entry-title a {
+		color: #000;
+	}
+
+	.entry-content h2,
+	.entry-content h3,
+	.entry-content h4,
+	.entry-content h5,
+	.entry-content h6 {
+		color: #000;
 	}
 
 	.entry-content figure {
@@ -590,7 +647,16 @@ li {
     margin-right: 0;
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+	#sidebar {
+		background: #080;
+		color: #000;
+	}
+
+	#sidebar ul.marquee li {
+		color: #000;
+	}
+}
 
 /**
  * Colophon
@@ -633,11 +699,23 @@ li {
 @media (max-width: 768px) {
 	#colophon {
 		margin: 1em 0;
+		color: #080;
+		text-align: center;
 	}
 
 	#colophon span {
 		display: block;
 		float: none !important;
+	}
+
+	#colophon .site-info a {
+		color: #080;
+	}
+
+	#colophon .site-info a:hover,
+	#colophon .site-info a:focus {
+		color: #0f0;
+		background: transparent;
 	}
 
 	#colophon .site-info span:last-child  {
@@ -681,10 +759,38 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 	box-shadow: .25em .25em #000;
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+	.btn,
+	.button,
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		display: table;
+		margin: 1em auto;
+		padding: 1em;
+		background: #000;
+		color: #0f0;
+		text-transform: uppercase;
+		box-shadow: .5em .5em #0f0;
+	}
 
-/* Monochrom */
+	.btn:hover, .btn:focus,
+	.button:hover, .button:focus,
+	button:hover, button:focus,
+	input[type="button"]:hover, input[type="button"]:focus,
+	input[type="reset"]:hover, input[type="reset"]:focus,
+	input[type="submit"]:hover, input[type="submit"]:focus {
+		background: #0f0;
+		color: #000;
+		cursor: pointer;
+		box-shadow: .25em .25em #000;
+	}
+}
 
+/**
+ * Monochrom
+ */
 .monochrom {}
 
 /**
@@ -755,6 +861,21 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 	color: #fff;
 	font-family: "Press Start 2P", cursive;
 	z-index: 99;
+}
+
+@media (max-width: 768px) {
+	#preloader {
+		background: #0f0;
+		background-image: linear-gradient( transparent 50%, #080 50% );
+		background-size: 1em 1em;
+		-webkit-animation: load 1s infinite linear;
+		        animation: load 1s infinite linear;
+	}	
+
+	#preloader div {
+		background: #000;
+		color: #0f0;
+	}
 }
 
 @-webkit-keyframes load {

@@ -47,7 +47,7 @@ Welcome to the UTOYVO space! I develop web sites and maybe you will like what yo
 ├── index.html
 ├── LICENSE
 ├── README.md
-└── screenshot.png
+└── screenshot.jpg
 ```
 
 ## BUILT WITH
