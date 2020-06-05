@@ -1,7 +1,7 @@
 [
 
 	{
-		"id"      :"8",
+		"id"      :"9",
 		"template":"works",
 		"title"   :"Loop",
 		"slug"    :"loop",
@@ -14,7 +14,7 @@
 	},
 
 	{
-		"id"      :"7",
+		"id"      :"8",
 		"template":"works",
 		"title"   :"Login Flow",
 		"slug"    :"login-flow",
@@ -27,7 +27,7 @@
 	},
 
 	{
-		"id"      :"6",
+		"id"      :"7",
 		"template":"works",
 		"title"   :"Marginal Act",
 		"slug"    :"marginal-act",
@@ -36,6 +36,19 @@
 		"button"  :{
 			"text":"View Site",
 			"url" :"https://marginalact.indie.af"
+		}
+	},
+
+	{
+		"id"      :"6",
+		"template":"works",
+		"title"   :"WP XYZ",
+		"slug"    :"wp-xyz",
+		"cover"   :"public/uploads/wp-xyz.jpg",
+		"content" :"<p>WP XYZ is a flexible, simple and responsive WordPress theme designed for blog. It features an clean and concise design.</p>",
+		"button"  :{
+			"text":"View GitHub",
+			"url" :"https://github.com/utoyvo/wp-xyz"
 		}
 	},
 
