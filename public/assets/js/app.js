@@ -42,7 +42,10 @@ jQuery(document).ready(function(){
 
 				items.push('<section id="' + data[index]['slug'] + '" data-template="' + template_id + '" class="entry b-blue">');
 
-				window.scrollTo({top: 0, behavior: 'smooth'});
+				window.scrollTo({
+					top: 0,
+					behavior: 'smooth'
+				});
 
 				var source   = document.getElementById(template_id).innerHTML,
 					template = Handlebars.compile(source),
@@ -75,6 +78,8 @@ jQuery(document).ready(function(){
 		if (page == '') {
 			page = 'home';
 		}
+
+		$('#navigation a.' + page + '-item').addClass('active');
 
 		return page;
 	}
