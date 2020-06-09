@@ -2,7 +2,7 @@
 
 Welcome to the UTOYVO space! I develop web sites and maybe you will like what you will see here.
 
-![utoyvo](screenshot.png)
+![utoyvo](screenshot.jpg)
 
 ## STRUCTURE
 ```
