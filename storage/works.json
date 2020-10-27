@@ -1,5 +1,18 @@
 [
 	{
+		"id"      :"10",
+		"template":"works",
+		"title"   :"Lviv Art Center",
+		"slug"    :"lviv-art-center",
+		"cover"   :"public/uploads/lviv-art-center.jpg",
+		"content" :"<p></p>",
+		"button"  :{
+			"text":"View Site",
+			"url" :"https://www.lvivart.center/"
+		}
+	},
+
+	{
 		"id"      :"9",
 		"template":"works",
 		"title"   :"Loop",
