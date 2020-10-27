@@ -5,7 +5,7 @@
 		"title"   :"Lviv Art Center",
 		"slug"    :"lviv-art-center",
 		"cover"   :"public/uploads/lviv-art-center.jpg",
-		"content" :"<p></p>",
+		"content" :"<p>Minimalist but very functional theme of Lviv Art Center.</p>",
 		"button"  :{
 			"text":"View Site",
 			"url" :"https://www.lvivart.center/"
