@@ -1,5 +1,18 @@
 [
 	{
+		"id"      :"11",
+		"template":"works",
+		"title"   :"Simplytopiya",
+		"slug"    :"simplytopiya",
+		"cover"   :"public/uploads/simplytopiya.jpg",
+		"content" :"<p>Сozy place for me & friends.</p><p>DEMO laboratory of <abbr title='Virtual Reality'>VR</abbr> experiences. Based on <a href='https://aframe.io/'>A-Frame</a> & <a href='https://github.com/delapuente/aframe-sharedspace-component'>Sharedspace</a>.</p>",
+		"button"  :{
+			"text":"View GitHub",
+			"url" :"https://github.com/utoyvo/simplytopiya"
+		}
+	},
+
+	{
 		"id"      :"10",
 		"template":"works",
 		"title"   :"Lviv Art Center",
