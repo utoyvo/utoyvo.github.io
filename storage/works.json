@@ -1,5 +1,18 @@
 [
 	{
+		"id"      :"12",
+		"template":"works",
+		"title"   :"Kozar",
+		"slug"    :"Kozar",
+		"cover"   :"public/uploads/kozar.jpg",
+		"content" :"<p>Wonderful and bold website of the Lviv jewelry brand.</p>",
+		"button"  :{
+			"text":"View Site",
+			"url" :"https://kozar.jewelry"
+		}
+	},
+
+	{
 		"id"      :"11",
 		"template":"works",
 		"title"   :"Simplytopiya",
