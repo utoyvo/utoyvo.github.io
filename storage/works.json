@@ -52,19 +52,6 @@
 	},
 
 	{
-		"id"      :"8",
-		"template":"works",
-		"title"   :"Login Flow",
-		"slug"    :"login-flow",
-		"cover"   :"public/uploads/login-flow.jpg",
-		"content" :"<p>Just another WordPress login flow plugin.</p>",
-		"button"  :{
-			"text":"View GitHub",
-			"url" :"https://github.com/utoyvo/login-flow"
-		}
-	},
-
-	{
 		"id"      :"7",
 		"template":"works",
 		"title"   :"Marginal Act",
@@ -74,19 +61,6 @@
 		"button"  :{
 			"text":"View Site",
 			"url" :"https://marginalact.indie.af"
-		}
-	},
-
-	{
-		"id"      :"6",
-		"template":"works",
-		"title"   :"WP XYZ",
-		"slug"    :"wp-xyz",
-		"cover"   :"public/uploads/wp-xyz.jpg",
-		"content" :"<p>WP XYZ is a flexible, simple and responsive WordPress theme designed for blog. It features an clean and concise design.</p>",
-		"button"  :{
-			"text":"View GitHub",
-			"url" :"https://github.com/utoyvo/wp-xyz"
 		}
 	},
 
@@ -113,19 +87,6 @@
 		"button"  :{
 			"text":"View Site",
 			"url" :"https://liniyavtechi.com"
-		}
-	},
-
-	{
-		"id"      :"3",
-		"template":"works",
-		"title"   :"CRUD MVC OOP PDO",
-		"slug"    :"crud-mvc-oop-pdo",
-		"cover"   :"public/uploads/crud-mvc-oop-pdo.jpg",
-		"content" :"<p>A simple and intuitive <abbr title='Create Read Update Delete'>CRUD</abbr> system using the <abbr title='Model View Controller'>MVC</abbr> pattern in <abbr title='Object-oriented programming'>OOP</abbr> paradigm. To connect to the database using <abbr title='PHP Data Objects'>PDO</abbr>.</p>",
-		"button"  :{
-			"text":"View GitHub",
-			"url" :"https://github.com/utoyvo/crud-mvc-oop-pdo"
 		}
 	},
 
