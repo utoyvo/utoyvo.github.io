@@ -273,14 +273,6 @@ li {
 	abbr[title] {
 		background: #0f0;
 	}
-
-	img {
-		-webkit-filter: hue-rotate(180deg);
-		-moz-filter: hue-rotate(180deg);
-		-ms-filter: hue-rotate(180deg);
-		-o-filter: hue-rotate(180deg);
-		filter: hue-rotate(180deg);
-	}
 }
 
 /**
